@@ -7,4 +7,8 @@ go build -o ./dist/goom .
 
 ./test/roundup test/*.sh
 
+TESTRESULT=$?
+
 git checkout test/examples
+
+exit $TESTRESULT
