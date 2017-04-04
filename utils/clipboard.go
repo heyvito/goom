@@ -1,24 +1,24 @@
 package utils
 
 import (
+	"fmt"
+	"os"
 	"os/exec"
+	"runtime"
 )
 
-var (
-	pasteCmdArgs = "pbpaste"
-	copyCmdArgs  = "pbcopy"
-)
+var copyCmdArgs string
 
 func init() {
-	err := (exec.Command("which", "pbcopy")).Run()
-	if err == nil {
-		return
-	}
-
-	err = (exec.Command("which", "xclip")).Run()
-	if err == nil {
-		copyCmdArgs = "xclip"
-		return
+	if runtime.GOOS == "darwin" {
+		copyCmdArgs = "pbcopy"
+	} else {
+		if err := exec.Command("which", "xclip").Run(); err != nil {
+			fmt.Println("On non-macOS environments, goom requires xclip, which could not be found.")
+			os.Exit(1)
+		} else {
+			copyCmdArgs = "xclip"
+		}
 	}
 }
 
