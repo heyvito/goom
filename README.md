@@ -1,6 +1,6 @@
 # goom
+> [![Build Status](https://travis-ci.org/victorgama/goom.svg?branch=master)](https://travis-ci.org/victorgama/goom) [![Go Report Card](https://goreportcard.com/badge/github.com/victorgama/goom)](https://goreportcard.com/report/github.com/victorgama/goom)
 
-## About
 goom is a port of [Holman](http://zachholman.com)'s [boom](https://github.com/holman/boom) in Go. It manages
 text snippets on the command line. Quoting Zach's description of boom:
 
