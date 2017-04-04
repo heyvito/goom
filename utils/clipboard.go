@@ -9,6 +9,19 @@ var (
 	copyCmdArgs  = "pbcopy"
 )
 
+func init() {
+	err := (exec.Command("which", "pbcopy")).Run()
+	if err == nil {
+		return
+	}
+
+	err = (exec.Command("which", "xclip")).Run()
+	if err == nil {
+		copyCmdArgs = "xclip"
+		return
+	}
+}
+
 func getCopyCommand() *exec.Cmd {
 	return exec.Command(copyCmdArgs)
 }
