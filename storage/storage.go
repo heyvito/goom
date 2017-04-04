@@ -17,8 +17,12 @@ import (
 var goomFile string
 
 func init() {
-	usr, _ := user.Current()
-	goomFile = filepath.Join(usr.HomeDir, ".goom")
+	if fileEnv := os.Getenv("GOOMFILE"); fileEnv != "" {
+		goomFile = fileEnv
+	} else {
+		usr, _ := user.Current()
+		goomFile = filepath.Join(usr.HomeDir, ".goom")
+	}
 }
 
 // ReadStore returns the local store in a managed state
