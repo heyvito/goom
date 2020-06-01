@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 
-	"github.com/victorgama/goom/commands"
-	"github.com/victorgama/goom/storage"
-	"github.com/victorgama/goom/utils"
+	"github.com/heyvito/goom/commands"
+	"github.com/heyvito/goom/storage"
+	"github.com/heyvito/goom/utils"
 )
 
 func main() {

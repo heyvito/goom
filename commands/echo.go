@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 
-	"github.com/victorgama/goom/storage"
-	"github.com/victorgama/goom/utils"
+	"github.com/heyvito/goom/storage"
+	"github.com/heyvito/goom/utils"
 )
 
 // Echo prints a given item without copying it to the clipboard. Helpful when

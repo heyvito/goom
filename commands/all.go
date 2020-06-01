@@ -2,10 +2,11 @@ package commands
 
 import (
 	"fmt"
-	"github.com/codegangsta/cli"
 
-	"github.com/victorgama/goom/storage"
-	"github.com/victorgama/goom/utils"
+	"github.com/urfave/cli"
+
+	"github.com/heyvito/goom/storage"
+	"github.com/heyvito/goom/utils"
 )
 
 // ListAll lists all items in all groups

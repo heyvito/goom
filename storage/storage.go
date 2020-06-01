@@ -10,8 +10,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/victorgama/goom/models"
-	"github.com/victorgama/goom/utils"
+	"github.com/heyvito/goom/models"
+	"github.com/heyvito/goom/utils"
 )
 
 var goomFile string

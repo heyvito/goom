@@ -7,7 +7,7 @@ import (
 
 	"github.com/fatih/color"
 
-	"github.com/victorgama/goom/models"
+	"github.com/heyvito/goom/models"
 )
 
 type byName []*models.Item

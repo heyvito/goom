@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/victorgama/goom/storage"
+	"github.com/heyvito/goom/storage"
 )
 
 // Overview prints a list of groups together with how many items they contain
