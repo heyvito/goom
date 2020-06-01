@@ -8,9 +8,15 @@ addons:
 go:
   - 1.7
   - 1.8
+  - 1.9
+  - 1.10
+  - 1.11
+  - 1.12
+  - 1.13
+  - 1.14
 
 before_install:
-  - go get github.com/codegangsta/cli github.com/fatih/color
+  - go get github.com/urfave/cli github.com/fatih/color
 
 script:
   - test/run
